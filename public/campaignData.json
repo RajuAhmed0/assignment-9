@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Winter Clothing Donation Drive",
+      "image": "https://ibb.co.com/Kjg6fqrK",
+      "description": "Providing warm clothing and essentials to families affected by extreme cold weather, ensuring their comfort and well-being during winter.",
+      "status": "Active",
+      "contactinfo": "rebuildhomes@gmail.com",
+      "division": "Dhaka"
+    },
+    {
+      "id": 2,
+      "title": "Winter Clothing for Children",
+      "image": "https://ibb.co.com/zVCqhMn8",
+      "description": "Distributing winter clothes, jackets, and blankets to underprivileged children to protect them from harsh winter conditions and keep them warm.",
+      "status": "Active",
+      "contactinfo": "feedchildren@gmail.com",
+      "division": "Chittagong"
+    },
+    {
+      "id": 3,
+      "title": "Warm Clothes for Rural Families",
+      "image": "https://ibb.co.com/YCRfMYr",
+      "description": "Providing winter essentials like blankets, sweaters, and gloves to families in rural areas, helping them stay warm and healthy during cold months.",
+      "status": "Ongoing",
+      "contactinfo": "cleanwaterforall@gmail.com",
+      "division": "Khulna"
+    },
+    {
+      "id": 4,
+      "title": "Education and Winter Aid",
+      "image": "https://ibb.co.com/Ldf0CxkT",
+      "description": "Supporting children’s education by providing winter clothing alongside school supplies, ensuring they can attend school comfortably during winter.",
+      "status": "Active",
+      "contactinfo": "educationforall@gmail.com",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 5,
+      "title": "Healthcare and Warmth Initiative",
+      "image": "https://ibb.co.com/238L3WQ4",
+      "description": "Ensuring access to warm clothing and healthcare services for low-income families, reducing winter-related illnesses and improving overall well-being.",
+      "status": "Pending",
+      "contactinfo": "healthcareaccess@gmail.com",
+      "division": "Barisal"
+    },
+    {
+      "id": 6,
+      "title": "Winter Care for Stray Animals",
+      "image": "https://ibb.co.com/dwk0MPST",
+      "description": "Providing shelters, blankets, and warm food for stray animals during winter, ensuring their safety and survival in extreme cold weather.",
+      "status": "Ongoing",
+      "contactinfo": "animalrescue@gmail.com",
+      "division": "Sylhet"
+    }
+  ]
+  

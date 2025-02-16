@@ -1,59 +1,72 @@
-import React from 'react';import { useState } from "react";
+import React from 'react'; import { useState } from "react";
 import { Menu } from "lucide-react";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <div>
-            <nav className="bg-white shadow-md w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-gray-700 flex items-center">
-              <span className="text-green-600">H</span>olity
-            </span>
-            <span className="text-xs text-gray-500 ml-2">SOCIAL SUPPORT</span>
-          </div>
-          
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-700 hover:text-green-600 border-b-2 border-red-400 pb-1">Home</a>
-            <a href="#" className="text-gray-700 hover:text-green-600">About</a>
-            <a href="#" className="text-gray-700 hover:text-green-600">Support Us</a>
-            <a href="#" className="text-gray-700 hover:text-green-600">Events</a>
-            <a href="#" className="text-gray-700 hover:text-green-600">Contacts</a>
-          </div>
-          
-          {/* Donate Button */}
-          <div className="hidden md:flex">
-            <button className="bg-green-400 hover:bg-green-500 text-white px-4 py-2 rounded-md">Donate</button>
-          </div>
+  return (
+    <div>
+      <nav className="bg-white shadow-md w-full fixed inset-x-0 top-0 z-30">
+        <div className="max-w-[1320px] xl:mx-auto mx-2 ">
+          <div className="flex justify-between h-16 items-center">
+            {/* Logo */}
+            <div className="flex items-center">
+              <img src='/img/logo.png' alt="" className='w-14' />
+            </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)}>
-              <Menu className="text-gray-700 w-6 h-6" />
-            </button>
+            {/* Desktop Menu */}
+            <div className="hidden md:flex space-x-6">
+              <NavLink to={"/"} className={({ isActive }) =>
+                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+              }>Home</NavLink>
+              <NavLink to={"/donation"} className={({ isActive }) =>
+                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+              }>Donation Campaigns</NavLink>
+              <NavLink to={"/howtohelp"} className={({ isActive }) =>
+                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+              }>How to Help</NavLink>
+              <NavLink to={"/dashboard"} className={({ isActive }) =>
+                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+              }>Dashboard</NavLink>
+
+            </div>
+
+            {/* Donate Button */}
+            <div className="hidden md:flex">
+              <button className="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-md">Donate</button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button onClick={() => setIsOpen(!isOpen)}>
+                <Menu className="text-gray-700 w-6 h-6" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-md p-4 space-y-3">
-          <a href="#" className="block text-gray-700 hover:text-green-600">Home</a>
-          <a href="#" className="block text-gray-700 hover:text-green-600">About</a>
-          <a href="#" className="block text-gray-700 hover:text-green-600">Support Us</a>
-          <a href="#" className="block text-gray-700 hover:text-green-600">Events</a>
-          <a href="#" className="block text-gray-700 hover:text-green-600">Contacts</a>
-          <button className="w-full bg-green-400 hover:bg-green-500 text-white px-4 py-2 rounded-md">Donate</button>
-        </div>
-      )}
-    </nav>
-        </div>
-    );
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-white shadow-md p-4 flex flex-col">
+            <NavLink to={"/"} className={({ isActive }) =>
+              `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+            }>Home</NavLink>
+            <NavLink to={"/donation"} className={({ isActive }) =>
+              `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+            }>Donation Campaigns</NavLink>
+            <NavLink to={"/howtohelp"} className={({ isActive }) =>
+              `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+            }>How to Help</NavLink>
+            <NavLink to={"/dashboard"} className={({ isActive }) =>
+              `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+            }>Dashboard</NavLink>
+            <button className="w-full bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 mt-2 rounded-md">Donate</button>
+          </div>
+        )}
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;
