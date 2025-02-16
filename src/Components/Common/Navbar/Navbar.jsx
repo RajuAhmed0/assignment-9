@@ -9,10 +9,10 @@ const Navbar = () => {
     <div>
       <nav className="bg-white shadow-md w-full fixed inset-x-0 top-0 z-30">
         <div className="max-w-[1320px] xl:mx-auto mx-2 ">
-          <div className="flex justify-between h-16 items-center">
+          <div className="flex justify-between md:h-16 h-12 items-center">
             {/* Logo */}
             <div className="flex items-center">
-              <img src='/img/logo.png' alt="" className='w-14' />
+              <img src='/img/logoweb.png' alt="" className='md:w-12 w-9' />
             </div>
 
             {/* Desktop Menu */}
