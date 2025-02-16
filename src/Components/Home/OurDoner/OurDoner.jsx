@@ -5,7 +5,7 @@ const OurDoner = () => {
         <div>
             <div className="mb-9">
                 <h1 className="text-3xl font-bold text-center mb-6">Our Donators</h1>
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-4 md:gap-8 gap-3 lg:mx-2 mx-24">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:mx-2 md:mx-4 sm:mx-20 mx-12 ">
                     <div className="border  rounded shadow-md max-w-64  ">
                         <img src="/img/doner1.jpeg" alt="" className="w-64  " />
                         <h2 className="text-lg font-semibold px-4 mt-2 text-left">Lester Lane</h2>
