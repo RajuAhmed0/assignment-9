@@ -4,6 +4,7 @@ import Navbar from '../Common/Navbar/Navbar';
 import Banner from './Banner/Banner';
 import About from './About/About';
 import ItWorks from './ItWorks/ItWorks';
+import OurDoner from './OurDoner/OurDoner';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <ItWorks></ItWorks>
+            <OurDoner></OurDoner>
         </div>
     );
 };
