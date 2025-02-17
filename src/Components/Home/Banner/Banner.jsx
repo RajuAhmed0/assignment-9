@@ -15,7 +15,7 @@ const Banner = () => {
 
   ];
   return (
-    <div className="relative w-full mt-[65px]">
+    <div className="relative w-full mt-[65px] mx-1">
       <style>
         {`
           .swiper-button-next, .swiper-button-prev {

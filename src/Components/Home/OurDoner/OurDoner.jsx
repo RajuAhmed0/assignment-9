@@ -1,4 +1,5 @@
 import React from 'react';
+import CounterSection from './CounterSection/CounterSection';
 
 const OurDoner = () => {
     return (
@@ -33,6 +34,7 @@ const OurDoner = () => {
                     </div>
                 </div>
             </div>
+            <CounterSection></CounterSection>
         </div>
     );
 };
