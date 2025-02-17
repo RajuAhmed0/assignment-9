@@ -8,12 +8,14 @@ import Donationcam from "../Pages/DonationCam/DonationCam";
 import DonationCamDetails from "../Pages/DonationCam/DonationCamDetail/DonationCamDetails";
 import DonationForm from "../Pages/DonationForm/DonationForm";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Login from "../Login/Login";
+import Register from "../Register/Register";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <HomeLayout></HomeLayout>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -24,7 +26,7 @@ export const router = createBrowserRouter([
                 element: <Donationcam></Donationcam>,
             },
 
-          
+
             {
                 path: '/dashboard',
                 element: <Dashboard></Dashboard>
@@ -39,5 +41,14 @@ export const router = createBrowserRouter([
             }
         ]
 
+    },
+
+    {
+        path: "/login",
+        element: <Login></Login>
+    },
+    {
+        path: "/register",
+        element: <Register></Register>
     }
 ])
