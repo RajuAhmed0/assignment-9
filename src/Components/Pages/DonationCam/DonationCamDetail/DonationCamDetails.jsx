@@ -50,8 +50,8 @@ const DonationCamDetails = () => {
                                     <CgMail className="w-5  text-orange-500" />
                                     <span>{campaigns.contactinfo}</span>
                                 </div>
-                                <Link to="/" className="block mt-4">
-                                    <button className="w-full  bg-orange-600 hover:bg-orange-400 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300">
+                                <Link to="/donationform" className="block mt-4">
+                                    <button className="w-full  bg-orange-600 hover:bg-orange-400 text-white font-semibold px-6 py-3 shadow-md transition-all duration-300">
                                         Donate
                                     </button>
                                 </Link>
