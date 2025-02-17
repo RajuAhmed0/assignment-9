@@ -20,7 +20,7 @@ const Navbar = () => {
               <NavLink to={"/"} className={({ isActive }) =>
                 `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
               }>Home</NavLink>
-              <NavLink to={"/donation"} className={({ isActive }) =>
+              <NavLink to={"/donationcam"} className={({ isActive }) =>
                 `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
               }>Donation Campaigns</NavLink>
               <NavLink to={"/howtohelp"} className={({ isActive }) =>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
             {/* Donate Button */}
             <div className="hidden md:flex">
-              <button className="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-md">Donate</button>
+              <button className="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-md">Login</button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavLink to={"/"} className={({ isActive }) =>
               `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
             }>Home</NavLink>
-            <NavLink to={"/donation"} className={({ isActive }) =>
+            <NavLink to={"/donationcam"} className={({ isActive }) =>
               `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
             }>Donation Campaigns</NavLink>
             <NavLink to={"/howtohelp"} className={({ isActive }) =>
@@ -61,7 +61,7 @@ const Navbar = () => {
             <NavLink to={"/dashboard"} className={({ isActive }) =>
               `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
             }>Dashboard</NavLink>
-            <button className="w-full bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 mt-2 rounded-md">Donate</button>
+            <button className="w-full bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 mt-2 rounded-md">Login</button>
           </div>
         )}
       </nav>

@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
                 element:<Home></Home>
             },
             {
-                path:'/donation',
+                path:'/donationcam',
                 element:<Donationcam></Donationcam>
             },
        
