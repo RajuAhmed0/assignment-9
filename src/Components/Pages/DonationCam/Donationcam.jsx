@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CgMail } from 'react-icons/cg';
 import { FaLocationDot } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const Donationcam = () => {
 
@@ -39,10 +40,18 @@ const Donationcam = () => {
                                 <p className="text-gray-700 leading-6">{campaign.description.length > 100
                                     ? campaign.description.slice(0, 70) + "..."
                                     : campaign.description}</p>
-                              
+
                                 <p className="flex items-center gap-2 py-2"><FaLocationDot className='w-5 text-orange-500' /> {campaign.division}</p>
-                               
-                                <button className="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-md ">Donate</button>
+                                <Link to={`/donationcamdetails/${campaign.id}`}>
+                                    <button className="relative bg-orange-600 hover:bg-black hover:rounded-3xl text-white px-4 py-2 rounded-md transition-all duration-300 group overflow-hidden">
+                                        <span className="absolute inset-0 hover:bg-stone-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            View
+                                        </span>
+                                        <span className="group-hover:opacity-0 transition-opacity duration-300">
+                                            Donate
+                                        </span>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
