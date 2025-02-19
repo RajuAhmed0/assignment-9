@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Toaster, toast } from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 import { useForm } from 'react-hook-form';
@@ -10,6 +10,8 @@ const Register = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, profileUpdate } = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation()
+
 
     const onSubmit = (data) => {
         createUser(data.email, data.password)
@@ -21,10 +23,11 @@ const Register = () => {
                         console.log("Profile updated successfully");
                         toast.success("Account created successfully!", { position: "top-right" });
 
+                        navigate(location.state ? location.state : "/")
                         // Delay navigation so the user can see the success message
-                        setTimeout(() => {
-                            navigate("/login");
-                        }, 1500);
+                        // setTimeout(() => {
+                        //     navigate("/login");
+                        // }, 1500);
                     })
                     .catch((err) => {
                         console.error("Profile update error:", err);

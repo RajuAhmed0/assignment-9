@@ -10,6 +10,7 @@ import DonationForm from "../Pages/DonationForm/DonationForm";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -33,11 +34,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/donationcamdetails/:id",
-                element: <DonationCamDetails></DonationCamDetails>
+                element: <PrivateRoute><DonationCamDetails></DonationCamDetails></PrivateRoute>
             },
             {
                 path: "/donationform",
-                element: <DonationForm></DonationForm>
+                element: <PrivateRoute><DonationForm></DonationForm></PrivateRoute>
             }
         ]
 
