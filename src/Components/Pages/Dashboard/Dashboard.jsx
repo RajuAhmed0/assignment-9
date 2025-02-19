@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -25,33 +26,10 @@ const Dashboard = () => {
                     <label className="block mt-4 mb-2 font-semibold">Photo Url</label>
                     <input
                         type="photoURL"
-                       placeholder='Please Enter Your PhotoURL'
+                       placeholder='Please Add Your PhotoURL'
                         className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
-
-                    <label className="block mt-4 mb-2 font-semibold">Email</label>
-                    <input
-                        type="email"
-                     placeholder='Please Enter Your Email'
-                        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                    />
-
-                    <label className="block mt-4 mb-2 font-semibold">Password</label>
-                    <div className="relative">
-                        <input
-                            type={passwordVisible ? "text" : "password"}
-                       placeholder='Enter Your Password'
-                            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                        />
-                        <button
-                            onClick={() => setPasswordVisible(!passwordVisible)}
-                            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
-                        >
-                            {passwordVisible ? <FaEye />  :  <FaEyeSlash />}
-                        </button>
-                    </div>
-
-                    <button className="w-full mt-6 bg-orange-600 text-white p-3  hover:bg-black transition">Submit</button>
+                   <Link to={"/"}> <button className="w-full mt-6 bg-orange-600 text-white p-3 hover:rounded-3xl  hover:bg-black transition">Update</button></Link>
                 </div>
             </div>
         </div>

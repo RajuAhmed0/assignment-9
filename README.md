@@ -1,60 +1,34 @@
 Assignment-9
 
-Description
+Description:
 
-A brief description of your project, explaining its purpose and functionality.
+The website aims to support non-profits, charities, or individual fundraisers by enabling users to make donations easily. It provides transparency, security, and accessibility for people who want to contribute to social causes.
 
-Live URL
+Live URL:
 
-# Visit the live site ### https://assignment-9-8aa9a.web.app
-
-Key Features
-
-Feature 1
-
-Feature 2
-
-Feature 3
-
-Feature 4
+ Visit the live site:.
+ # https://assignment-9-8aa9a.web.app
 
 Technologies Used
 
 HTML
-
 CSS
-
 JavaScript
-
-React (if applicable)
-
-Node.js (if applicable)
+React Jsx
+Tailwind css
+Daisy Ui
+Swiper
 
 NPM Packages Used
 
-Package 1: npm install package-name
-
-Package 2: npm install package-name
-
-Package 3: npm install package-name
-
-
-<!-- # Host Link
-### https://assignment-9-8aa9a.web.app
-
-# npm packege
-# 1.tailwind css
-# 2.daisy Ui
-# 3.react router dom
-# 4.goole font, poppons
-# 5.lucide icons
-# 6.swiper
-# 7. react-slick
-# 8.react-countup
-# 9.react-intersection-observer
-# 10. react-hook-form
-# 11. react-hot-toast
-# 12. react-select
-# 13. react-toastify
-# 14.react-hot-toast
-# 15.npm i @react-oauth/google -->
+. Package 1: npm install react router dom
+. Package 2: npm install lucide icons
+. Package 3: npm install react-slick
+. Package 4: npm install react-countup
+. Package 5: npm install react-intersection-observer
+. Package 6: npm install react-hook-form
+. Package 7: npm install react-hot-toast
+. Package 8: npm install react-select
+. Package 9: npm install react-hot-toast
+. Package 10: npm install react-toastify
+. Package 11: npm install @react-oauth/google
