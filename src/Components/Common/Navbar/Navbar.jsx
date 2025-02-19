@@ -38,7 +38,10 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center gap-3">
+              <h2 className="   text-xl font-bold flex items-center gap-2">
+                <span className="text-orange-600">DONATION</span> WORLD
+              </h2>
               <button onClick={() => setIsOpen(!isOpen)}>
                 <Menu className="text-gray-700 w-6 h-6" />
               </button>

@@ -28,11 +28,16 @@ const DonationForm = () => {
             borderColor: '#ccc',
             borderRadius: '8px',
             padding: '5px',
+            
+     
+              
         }),
         option: (provided, state) => ({
             ...provided,
             backgroundColor: state.isSelected ? '#f97316' : state.isFocused ? '#ffedd5' : '#fff',
             color: state.isSelected ? '#fff' : '#000',
+          
+               
         }),
     };
 
@@ -46,11 +51,11 @@ const DonationForm = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
                 <label className="block font-semibold">Quantity</label>
                 <input
-                    {...register("quantity", { required: true })}
-                    type="number"
+                   {...register("quantity", { required: true })}
                     className="w-full p-2 border rounded-md"
                     placeholder="Quantity of items"
                 />
+            
 
                 <label className="block font-semibold">Item Type</label>
                 <Select

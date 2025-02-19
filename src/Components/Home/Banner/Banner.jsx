@@ -15,7 +15,7 @@ const Banner = () => {
 
   ];
   return (
-    <div className="relative w-full mt-[65px] mx-1">
+    <div className="relative max-w-full mt-[65px] mx-1">
       <style>
         {`
           .swiper-button-next, .swiper-button-prev {
@@ -55,7 +55,7 @@ const Banner = () => {
             <img
               src={slide.img}
               alt="Winter Donation"
-              className="w-full h-full "
+              className="w-full max-h-[550px] "
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl md:text-4xl font-bold">
               <div className=" flex items-center justify-center px-6 md:px-12 lg:px-24" >

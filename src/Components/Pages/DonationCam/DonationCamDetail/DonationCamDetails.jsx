@@ -51,7 +51,7 @@ const DonationCamDetails = () => {
                                     <span>{campaigns.contactinfo}</span>
                                 </div>
                                 <Link to="/donationform" className="block mt-4">
-                                    <button className="w-full  bg-orange-600 hover:bg-orange-400 text-white font-semibold px-6 py-3 shadow-md transition-all duration-300">
+                                    <button className="w-full  bg-orange-600 hover:bg-black text-white font-semibold px-6 py-3 shadow-md transition-all duration-300">
                                         Donate
                                     </button>
                                 </Link>
