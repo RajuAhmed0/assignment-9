@@ -11,6 +11,8 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Edit from "../Pages/Dashboard/EditProfile/Edit";
+
 
 export const router = createBrowserRouter([
     {
@@ -30,7 +32,8 @@ export const router = createBrowserRouter([
 
             {
                 path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                element: <Dashboard></Dashboard>,
+
             },
             {
                 path: "/donationcamdetails/:id",
@@ -51,5 +54,9 @@ export const router = createBrowserRouter([
     {
         path: "/register",
         element: <Register></Register>
+    },
+    {
+        path:"/edit",
+        element:<Edit></Edit>
     }
 ])

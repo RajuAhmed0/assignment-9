@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'; import { useState } from "react";
+import { useContext, useState } from "react";
 import { Menu } from "lucide-react";
 import { Link, NavLink } from 'react-router-dom';
-import { AuthContext } from '../../Provider/AuthProvider';
+import { AuthContext } from "../../Provider/AuthProvider";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +38,11 @@ const Navbar = () => {
               <NavLink to={"/howtohelp"} className={({ isActive }) =>
                 `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
               }>How to Help</NavLink>
-              <NavLink to={"/dashboard"} className={({ isActive }) =>
-                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
-              }>Dashboard</NavLink>
+              {
+                user && <NavLink to={"/dashboard"} className={({ isActive }) =>
+                  `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+                }>Dashboard</NavLink>
+              }
 
             </div>
 
@@ -81,9 +84,13 @@ const Navbar = () => {
             <NavLink to={"/howtohelp"} className={({ isActive }) =>
               `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
             }>How to Help</NavLink>
-            <NavLink to={"/dashboard"} className={({ isActive }) =>
-              `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
-            }>Dashboard</NavLink>
+
+            {user &&
+              <NavLink to={"/dashboard"} className={({ isActive }) =>
+                `text-lg ${isActive ? "text-slate-400" : "text-gray-700"} hover:text-slate-400`
+              }>Dashboard</NavLink>
+
+            }
             {user ? (
               <>
                 <div className='flex items-center gap-2'>
