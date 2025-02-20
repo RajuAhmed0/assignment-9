@@ -21,8 +21,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-white shadow-md w-full fixed inset-x-0 top-0 z-30">
-        <div className="max-w-[1320px] xl:mx-auto mx-2 ">
-          <div className="flex justify-between md:h-16 h-12 items-center">
+        <div className="max-w-[1320px] xl:mx-auto">
+          <div className="flex justify-between md:h-16 h-12 items-center xl:mx-0 sm:mx-2">
             {/* Logo */}
             <div className="flex items-center">
               <img src='/img/logoweb.png' alt="" className='md:w-12 w-9' />

@@ -1,13 +1,12 @@
-Assignment-9
+Assignment-9: Non-Profit Fundraising Donations Platform
 
 Description:
 
-The website aims to support non-profits, charities, or individual fundraisers by enabling users to make donations easily. It provides transparency, security, and accessibility for people who want to contribute to social causes.
+The website aims to support non-profits, charities, and individual fundraisers by enabling users to make donations easily. It ensures transparency, security, and accessibility for those who want to contribute to social causes.
 
-Live URL:
+Live URL
 
-
-# Visit the live site: https://assignment-9-8aa9a.web.app
+Visit the live site :  https://assignment-9-8aa9a.web.app
 
 Technologies Used
 
@@ -17,34 +16,51 @@ CSS
 
 JavaScript
 
-React Jsx
+React JSX
 
-Tailwind css
+Tailwind CSS
 
-Daisy Ui
+Daisy UI
 
 Swiper
 
+Key Features
+
+User-friendly donation process
+
+Secure payment integration
+
+Responsive design for all devices
+
+Interactive UI with smooth transitions
+
+Form validation and data handling
+
+Toast notifications for user actions
+
+Social login via Google authentication
+
+
 NPM Packages Used
 
-. Package 1: npm install react router dom
+ .1 npm install react router dom
 
-. Package 2: npm install lucide icons
+ .2 npm install lucide icons
 
-. Package 3: npm install react-slick
+ .3 npm install react-slick
 
-. Package 4: npm install react-countup
+ .4 npm install react-countup
 
-. Package 5: npm install react-intersection-observer
+ .5 npm install react-intersection-observer
 
-. Package 6: npm install react-hook-form
+ .6 npm install react-hook-form
 
-. Package 7: npm install react-hot-toast
+ .7 npm install react-hot-toast
 
-. Package 8: npm install react-select
+ .8 npm install react-select
 
-. Package 9: npm install react-hot-toast
+ .9 npm install react-hot-toast
 
-. Package 10: npm install react-toastify
+ .10 npm install react-toastify
 
-. Package 11: npm install @react-oauth/google
+ .11 npm install @react-oauth/google

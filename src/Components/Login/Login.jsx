@@ -8,6 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { sendPasswordResetEmail, signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider } from '../../Firebase/firebase.config';
 
+
 const Login = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [email, setEmail] = useState('');
@@ -147,7 +148,8 @@ const Login = () => {
                     </Link>
                 </div>
 
-                <Toaster />
+                <Toaster position="top-right" />
+
             </div>
         </div>
     );

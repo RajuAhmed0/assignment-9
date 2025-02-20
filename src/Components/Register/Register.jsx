@@ -24,10 +24,7 @@ const Register = () => {
                         toast.success("Account created successfully!", { position: "top-right" });
 
                         navigate(location.state ? location.state : "/login")
-                        // Delay navigation so the user can see the success message
-                        // setTimeout(() => {
-                        //     navigate("/login");
-                        // }, 1500);
+                      
                     })
                     .catch((err) => {
                         console.error("Profile update error:", err);

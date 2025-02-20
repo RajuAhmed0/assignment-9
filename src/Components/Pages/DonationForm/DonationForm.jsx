@@ -19,7 +19,6 @@ const DonationForm = () => {
         setSelectedItem(null);
     };
 
-
     /* select modify */
     const customStyles = {
         control: (provided) => ({
@@ -28,16 +27,14 @@ const DonationForm = () => {
             borderColor: '#ccc',
             borderRadius: '8px',
             padding: '5px',
-            
-     
-              
         }),
+
         option: (provided, state) => ({
             ...provided,
             backgroundColor: state.isSelected ? '#f97316' : state.isFocused ? '#ffedd5' : '#fff',
             color: state.isSelected ? '#fff' : '#000',
-          
-               
+
+
         }),
     };
 
@@ -51,11 +48,15 @@ const DonationForm = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
                 <label className="block font-semibold">Quantity</label>
                 <input
-                   {...register("quantity", { required: true })}
+                    type="number"
+
+                    {...register("quantity", { required: true, min: 1, })}
                     className="w-full p-2 border rounded-md"
                     placeholder="Quantity of items"
+                    min="1"
+              
                 />
-            
+
 
                 <label className="block font-semibold">Item Type</label>
                 <Select
@@ -88,7 +89,7 @@ const DonationForm = () => {
                 </button>
             </form>
 
-            <ToastContainer position="top-right" /> {/* Set the position to top-right */}
+            <ToastContainer position="top-right" /> 
         </div>
     );
 };

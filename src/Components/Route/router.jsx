@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Home/Home";
 import HomeLayout from "../Layout/HomeLayout";
-
-import Help from "../Pages/Help/Help";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Donationcam from "../Pages/DonationCam/DonationCam";
 import DonationCamDetails from "../Pages/DonationCam/DonationCamDetail/DonationCamDetails";
@@ -28,7 +26,6 @@ export const router = createBrowserRouter([
                 path: '/donationcam',
                 element: <Donationcam></Donationcam>,
             },
-
 
             {
                 path: '/dashboard',

@@ -9,7 +9,7 @@ import Blog from './Blog/Blog';
 
 const Home = () => {
     return (
-        <div>
+        <div className='max-w-[1320px ]'>
             <Banner></Banner>
             <About></About>
             <ItWorks></ItWorks>
