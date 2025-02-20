@@ -23,7 +23,7 @@ const Register = () => {
                         console.log("Profile updated successfully");
                         toast.success("Account created successfully!", { position: "top-right" });
 
-                        navigate(location.state ? location.state : "/")
+                        navigate(location.state ? location.state : "/login")
                         // Delay navigation so the user can see the success message
                         // setTimeout(() => {
                         //     navigate("/login");
@@ -128,6 +128,7 @@ const Register = () => {
                     >
                         Register
                     </button>
+
                 </form>
 
                 <div className="text-center mt-6 text-gray-600">
